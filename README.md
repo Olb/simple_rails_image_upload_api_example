@@ -29,7 +29,8 @@ end
 ```
 
 to whatever you want. I did this:
-```def store_dir
+```
+def store_dir
     "uploads/"
 end
 ```
