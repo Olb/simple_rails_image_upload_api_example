@@ -38,13 +38,13 @@ end
 *The above can forward files to Cloudinary
 
 5) Start server and POST
-*if its test project you want to add the following tp application_controller.rb:
+*if its test project you want to add the following to application_controller.rb:
 protect_from_forgery with: :null_session
 
-6) User Postman or whatever to upload file. With the above setup the url would be:`http://localhost:3000/images` and the key for the file upload is: image
+6) User Postman or whatever to upload file. With the above setup, the url would be:`http://localhost:3000/images` and the key for the file upload is: image
 
-7) Find the file tom projectdir/public/uploads if you used the above steps including file path
+7) Find the file in projectdir/public/uploads if you used the above steps including file path
 
-Note: This works for images, files, videos etc. See the ImageUploader to see how to restrict
+Note: This works for images, files, videos etc. See the ImageUploader to see how to restrict to file types. This example will allow images and videos.
 
 # simple_rails_image_upload_api_example
