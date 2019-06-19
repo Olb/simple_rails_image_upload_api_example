@@ -14,20 +14,25 @@
 
 6) Go to ImageController(if you named the above Images) and add:
 
-`def create
+```
+def create
     uploader = ImageUploader.new
     uploader.store!(params[:image])
-end`
+end
+```
 
 7) Go to ImageUploader and change this:
-`def store_dir
+```
+def store_dir
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
-end`
+end
+```
 
 to whatever you want. I did this:
-`def store_dir
+```def store_dir
     "uploads/"
-end`
+end
+```
 
 *The above can forward files to Cloudinary
 
