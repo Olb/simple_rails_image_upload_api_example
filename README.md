@@ -1,6 +1,6 @@
 # Very simple example for API endpoint for uploading images/videos
 
-1) `rails intall <app_name>` in this example case app_name=upload_howto
+1) `rails intall <app_name>` in this example app_name=upload_howto
 
 2) `gem install carrierwave`
 
